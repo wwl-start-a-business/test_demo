@@ -18,12 +18,13 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          require('postcss-pxtorem')({ // 把px单位换算成rem单位
+          require("postcss-pxtorem")({
+            // 把px单位换算成rem单位
             rootValue: 16,
             unitPrecision: 5, // 最小精度，小数点位数
-            propList: ['*'], // !不匹配属性（这里是字体相关属性不转换）
+            propList: ["*"], // !不匹配属性（这里是字体相关属性不转换）
             selectorBlackList: [],
-            minPixelValue:2 // 替换的最小像素值
+            minPixelValue: 2 // 替换的最小像素值
           })
         ]
       },

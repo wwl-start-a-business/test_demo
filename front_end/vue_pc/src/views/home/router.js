@@ -10,7 +10,7 @@ modules["index"] = resolve => {
   );
 };
 let routerArr = {
-  index: {},
+  index: {}
 };
 
 let routes = [];
@@ -24,6 +24,4 @@ for (let k in routerArr) {
   };
   routes.push(cRouter);
 }
-// 修改密码 和 登陆页 只走一级路由
-
 export default routes;

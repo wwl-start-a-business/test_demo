@@ -2,9 +2,7 @@
   <section class="layout_login">
     <div class="layout_test">123123123132</div>
     <el-button :plain="true" @click="open">打开消息提示</el-button>
-    <swiper
-      :options="swiperOption"
-      class="layout_swiper_box">
+    <swiper :options="swiperOption" class="layout_swiper_box">
       <swiper-slide class="banner-slide">
         <img src="../../assets/logo.png">
       </swiper-slide>
@@ -19,14 +17,15 @@
   </section>
 </template>
 <script>
-import 'swiper/dist/css/swiper.css'
+import "swiper/dist/css/swiper.css";
 export default {
   components: {
     swiper: resolve => {
-      require(['vue-awesome-swiper'], ({swiper}) => resolve(swiper))
+      require(["vue-awesome-swiper"], ({ swiper }) => resolve(swiper));
     },
     swiperSlide: resolve => {
-      require(['vue-awesome-swiper'], ({swiperSlide}) => resolve(swiperSlide))
+      require(["vue-awesome-swiper"], ({ swiperSlide }) =>
+        resolve(swiperSlide));
     }
   },
   data() {
