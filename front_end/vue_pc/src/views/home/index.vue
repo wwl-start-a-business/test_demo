@@ -4,13 +4,13 @@
     <el-button :plain="true" @click="open">打开消息提示</el-button>
     <swiper :options="swiperOption" class="layout_swiper_box">
       <swiper-slide class="banner-slide">
-        <img src="../../assets/logo.png">
+        <img src="../../assets/logo.png" />
       </swiper-slide>
       <swiper-slide class="banner-slide">
-        <img src="../../assets/logo.png">
+        <img src="../../assets/logo.png" />
       </swiper-slide>
       <swiper-slide class="banner-slide">
-        <img src="../../assets/logo.png">
+        <img src="../../assets/logo.png" />
       </swiper-slide>
     </swiper>
     <section class="layout_bottom">2019-2020 © essaybot</section>
