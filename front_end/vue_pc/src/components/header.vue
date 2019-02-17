@@ -1,30 +1,20 @@
 <template>
   <section class="layout_home_header">
     <div class="layout_logo">
-      <img class="i_logo" src="@/logo.jpeg" alt>
+      <img class="i_logo" src="@/logo.jpeg" alt />
       <span class="i_span">武汉</span>
-      <span class="i_tel">
-        <i></i>tel : 15871747564
-      </span>
+      <span class="i_tel"> <i></i>tel : 15871747564 </span>
       <!-- <span class="iconfont icon-emali"></span> -->
     </div>
     <div class="layout_nav">
       <ul>
-        <li class="active">
-          <i class="iconfont icon-home"></i> 首页
-        </li>
-        <li>
-          <i class="iconfont icon-i-xm"></i> 服务项目
-        </li>
+        <li class="active"><i class="iconfont icon-home"></i> 首页</li>
+        <li><i class="iconfont icon-i-xm"></i> 服务项目</li>
         <li>
           <i class="iconfont icon-gerenzhongxin-chenggonganli"></i> 成功案例
         </li>
-        <li>
-          <i class="iconfont icon-hezuo"></i> 合作加盟
-        </li>
-        <li>
-          <i class="iconfont icon-guanyu"></i> 关于我们
-        </li>
+        <li><i class="iconfont icon-hezuo"></i> 合作加盟</li>
+        <li><i class="iconfont icon-guanyu"></i> 关于我们</li>
       </ul>
     </div>
   </section>

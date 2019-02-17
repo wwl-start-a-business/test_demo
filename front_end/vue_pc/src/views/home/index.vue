@@ -6,17 +6,31 @@
       <div class="layout_swiper_box">
         <!-- <div class="i_home_content_left"></div> -->
         <!-- swiper1 -->
-        <swiper :options="swiperOption" class="gallery-top layout_swiper_box" ref="swiperTop">
+        <swiper
+          :options="swiperOption"
+          class="gallery-top layout_swiper_box"
+          ref="swiperTop"
+        >
           <swiper-slide class="slide-1"></swiper-slide>
           <swiper-slide class="slide-2"></swiper-slide>
           <swiper-slide class="slide-3"></swiper-slide>
           <swiper-slide class="slide-4"></swiper-slide>
           <swiper-slide class="slide-5"></swiper-slide>
-          <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-          <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+          <div
+            class="swiper-button-next swiper-button-white"
+            slot="button-next"
+          ></div>
+          <div
+            class="swiper-button-prev swiper-button-white"
+            slot="button-prev"
+          ></div>
         </swiper>
         <!-- swiper2 Thumbs -->
-        <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
+        <swiper
+          :options="swiperOptionThumbs"
+          class="gallery-thumbs"
+          ref="swiperThumbs"
+        >
           <swiper-slide class="slide-1"></swiper-slide>
           <swiper-slide class="slide-2"></swiper-slide>
           <swiper-slide class="slide-3"></swiper-slide>
@@ -69,7 +83,13 @@
               :value="item.value"
             ></el-option>
           </el-select>
-          <el-button type="primary" plain class="i_sanbu_btn" @click="orderFun(0)">立即查看</el-button>
+          <el-button
+            type="primary"
+            plain
+            class="i_sanbu_btn"
+            @click="orderFun(0)"
+            >立即查看</el-button
+          >
         </div>
       </div>
       <!-- 优惠/省心/保障 -->
@@ -112,36 +132,16 @@
           <div class="i_tianmao_right">
             <h2>热门类目</h2>
             <ul>
-              <li>
-                <span class="i_color_red">01/</span> 服饰鞋包
-              </li>
-              <li>
-                <span class="i_color_red">02/</span> 数码电器
-              </li>
-              <li>
-                <span class="i_color_red">03/</span> 食品/保健
-              </li>
-              <li>
-                <span class="i_color_red">04/</span> 母婴
-              </li>
-              <li>
-                <span class="i_color_red">05/</span> 运动户外
-              </li>
-              <li>
-                <span class="i_color_red">06/</span> 书籍音像
-              </li>
-              <li>
-                <span class="i_color_red">07/</span> 家装家饰
-              </li>
-              <li>
-                <span class="i_color_red">08/</span> 汽车配件
-              </li>
-              <li>
-                <span class="i_color_red">09/</span> 美容护理
-              </li>
-              <li>
-                <span class="i_color_red">10/</span> 家居饰品
-              </li>
+              <li><span class="i_color_red">01/</span> 服饰鞋包</li>
+              <li><span class="i_color_red">02/</span> 数码电器</li>
+              <li><span class="i_color_red">03/</span> 食品/保健</li>
+              <li><span class="i_color_red">04/</span> 母婴</li>
+              <li><span class="i_color_red">05/</span> 运动户外</li>
+              <li><span class="i_color_red">06/</span> 书籍音像</li>
+              <li><span class="i_color_red">07/</span> 家装家饰</li>
+              <li><span class="i_color_red">08/</span> 汽车配件</li>
+              <li><span class="i_color_red">09/</span> 美容护理</li>
+              <li><span class="i_color_red">10/</span> 家居饰品</li>
             </ul>
           </div>
         </div>
@@ -264,10 +264,16 @@
       沪ICP备0000000号 沪公网安备 00000000000号
       <i></i>武汉伟焰网络科技有限公司
     </section>
-    <el-dialog title="意向需求" :visible.sync="moduleCenterDialogVisible" class="layout_module_box">
+    <el-dialog
+      title="意向需求"
+      :visible.sync="moduleCenterDialogVisible"
+      class="layout_module_box"
+    >
       <el-form :model="order">
         <el-form-item label="服务项目：" label-width="120px">
-          <span v-if="!orderType">{{ order.sel1 }} / {{ order.sel2 }} / {{ order.sel3 }}元</span>
+          <span v-if="!orderType"
+            >{{ order.sel1 }} / {{ order.sel2 }} / {{ order.sel3 }}元</span
+          >
           <span v-if="orderType == 1">天猫业务</span>
           <span v-if="orderType == 2">商标业务</span>
           <span v-if="orderType == 3">公司业务</span>
